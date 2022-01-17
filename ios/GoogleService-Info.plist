@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>784760005046-ppat1qecpc94p1dg9t4qo45e0cfd7hnn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.784760005046-ppat1qecpc94p1dg9t4qo45e0cfd7hnn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDyGEoeZFuznrilxVHknkIWlZvY2Pj6ldU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>784760005046</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>rocket.chat.softaliza</string>
+	<key>PROJECT_ID</key>
+	<string>rocket-chat-softaliza</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rocket-chat-softaliza.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:784760005046:ios:77c1d09460d26e50006117</string>
+	<key>DATABASE_URL</key>
+	<string>https://rocket-chat-softaliza.firebaseio.com</string>
+</dict>
+</plist>
