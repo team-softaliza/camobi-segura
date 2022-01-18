@@ -25,7 +25,7 @@
 	<key>IS_OFFICIAL</key>
 	<false/>
 	<key>KeychainGroup</key>
-	<string>$(AppIdentifierPrefix)chat.rocket.reactnative</string>
+	<string>$(AppIdentifierPrefix)rocket.chat.softaliza</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
