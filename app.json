@@ -2,7 +2,7 @@
 	"name": "RocketChatRN",
 	"share": "ShareRocketChatRN",
 	"displayName": "RocketChatRN",
-	"server": "http://dev-chat.camobisegura.com.br",
-	"appGroup": "group.ios.chat.rocket",
-	"appStoreID": "1272915472"
+	"server": "https://dev-chat.camobisegura.com.br",
+	"appGroup": "group.rocket.chat.softaliza",
+	"appStoreID": "1515168312"
 }
