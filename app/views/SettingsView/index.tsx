@@ -15,10 +15,8 @@ import * as List from '../../containers/List';
 import I18n from '../../i18n';
 import RocketChat from '../../lib/rocketchat';
 import { getDeviceModel, getReadableVersion } from '../../utils/deviceInfo';
-import openLink from '../../utils/openLink';
 import { showConfirmationAlert, showErrorAlert } from '../../utils/info';
 import { events, logEvent } from '../../utils/log';
-import { LICENSE_LINK } from '../../constants/links';
 import { withTheme } from '../../theme';
 import SidebarView from '../SidebarView';
 import { LISTENER } from '../../containers/Toast';
@@ -159,12 +157,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 		EventEmitter.emit(LISTENER, { message: I18n.t('Copied_to_clipboard') });
 	};
 
-	onPressLicense = () => {
-		logEvent(events.SE_READ_LICENSE);
-		const { theme } = this.props;
-		openLink(LICENSE_LINK, theme);
-	};
-
 	render() {
 		const { server, isMasterDetail, theme } = this.props;
 		return (
@@ -208,7 +200,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 							</>
 						) : null}
 						<List.Separator />
-						<List.Separator />
 						<List.Item
 							title='Default_browser'
 							showActionIndicator
@@ -233,8 +224,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 					</List.Section>
 
 					<List.Section>
-						<List.Separator />
-						<List.Item title='License' onPress={this.onPressLicense} showActionIndicator testID='settings-view-license' />
 						<List.Separator />
 						<List.Item
 							title={I18n.t('Version_no', { version: getReadableVersion })}
