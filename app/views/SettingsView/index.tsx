@@ -139,26 +139,13 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 		}
 	};
 
-	copyServerVersion = () => {
-		const {
-			server: { version }
-		} = this.props;
-		logEvent(events.SE_COPY_SERVER_VERSION, { serverVersion: version });
-		this.saveToClipboard(version);
-	};
-
-	copyAppVersion = () => {
-		logEvent(events.SE_COPY_APP_VERSION, { appVersion: getReadableVersion });
-		this.saveToClipboard(getReadableVersion);
-	};
-
 	saveToClipboard = async (content: string) => {
 		await Clipboard.setString(content);
 		EventEmitter.emit(LISTENER, { message: I18n.t('Copied_to_clipboard') });
 	};
 
 	render() {
-		const { server, isMasterDetail, theme } = this.props;
+		const { isMasterDetail, theme } = this.props;
 		return (
 			<SafeAreaView testID='settings-view'>
 				<StatusBar />
@@ -219,26 +206,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 							showActionIndicator
 							onPress={() => this.navigateToScreen('SecurityPrivacyView')}
 							testID='settings-view-security-privacy'
-						/>
-						<List.Separator />
-					</List.Section>
-
-					<List.Section>
-						<List.Separator />
-						<List.Item
-							title={I18n.t('Version_no', { version: getReadableVersion })}
-							onPress={this.copyAppVersion}
-							testID='settings-view-version'
-							translateTitle={false}
-						/>
-						<List.Separator />
-						<List.Item
-							title={I18n.t('Server_version', { version: server.version })}
-							onPress={this.copyServerVersion}
-							subtitle={`${server.server.split('//')[1]}`}
-							testID='settings-view-server-version'
-							translateTitle={false}
-							translateSubtitle={false}
 						/>
 						<List.Separator />
 					</List.Section>
