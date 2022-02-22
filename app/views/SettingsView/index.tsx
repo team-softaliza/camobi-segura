@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clipboard, Linking, Share } from 'react-native';
+import { Clipboard, Linking } from 'react-native';
 import { connect } from 'react-redux';
 import FastImage from '@rocket.chat/react-native-fast-image';
 import CookieManager from '@react-native-cookies/cookies';
@@ -14,11 +14,11 @@ import StatusBar from '../../containers/StatusBar';
 import * as List from '../../containers/List';
 import I18n from '../../i18n';
 import RocketChat from '../../lib/rocketchat';
-import { getDeviceModel, getReadableVersion, isAndroid } from '../../utils/deviceInfo';
+import { getDeviceModel, getReadableVersion } from '../../utils/deviceInfo';
 import openLink from '../../utils/openLink';
 import { showConfirmationAlert, showErrorAlert } from '../../utils/info';
 import { events, logEvent } from '../../utils/log';
-import { APP_STORE_LINK, FDROID_MARKET_LINK, LICENSE_LINK, PLAY_MARKET_LINK } from '../../constants/links';
+import { LICENSE_LINK } from '../../constants/links';
 import { withTheme } from '../../theme';
 import SidebarView from '../SidebarView';
 import { LISTENER } from '../../containers/Toast';
@@ -141,19 +141,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 		}
 	};
 
-	shareApp = () => {
-		let message;
-		if (isAndroid) {
-			message = PLAY_MARKET_LINK;
-			if (isFDroidBuild) {
-				message = FDROID_MARKET_LINK;
-			}
-		} else {
-			message = APP_STORE_LINK;
-		}
-		Share.share({ message });
-	};
-
 	copyServerVersion = () => {
 		const {
 			server: { version }
@@ -221,7 +208,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 							</>
 						) : null}
 						<List.Separator />
-						<List.Item title='Share_this_app' showActionIndicator onPress={this.shareApp} testID='settings-view-share-app' />
 						<List.Separator />
 						<List.Item
 							title='Default_browser'
