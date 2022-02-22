@@ -210,13 +210,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 						<List.Separator />
 						<List.Item title='Contact_us' onPress={this.sendEmail} showActionIndicator testID='settings-view-contact' />
 						<List.Separator />
-						<List.Item
-							title='Language'
-							onPress={() => this.navigateToScreen('LanguageView')}
-							showActionIndicator
-							testID='settings-view-language'
-						/>
-						<List.Separator />
 						{!isFDroidBuild ? (
 							<>
 								<List.Item
