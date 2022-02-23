@@ -162,16 +162,6 @@ const MessageActions = React.memo(
 				editInit(message);
 			};
 
-			const handleCreateDiscussion = (message: any) => {
-				logEvent(events.ROOM_MSG_ACTION_DISCUSSION);
-				const params = { message, channel: room, showCloseModal: true };
-				if (isMasterDetail) {
-					Navigation.navigate('ModalStackNavigator', { screen: 'CreateDiscussionView', params });
-				} else {
-					Navigation.navigate('NewMessageStackNavigator', { screen: 'CreateDiscussionView', params });
-				}
-			};
-
 			const handleUnread = async (message: any) => {
 				logEvent(events.ROOM_MSG_ACTION_UNREAD);
 				const { id: messageId, ts } = message;
@@ -342,13 +332,6 @@ const MessageActions = React.memo(
 						onPress: () => handleEdit(message)
 					});
 				}
-
-				// Create Discussion
-				options.push({
-					title: I18n.t('Start_a_Discussion'),
-					icon: 'discussions',
-					onPress: () => handleCreateDiscussion(message)
-				});
 
 				// Mark as unread
 				if (message.u && message.u._id !== user.id) {
