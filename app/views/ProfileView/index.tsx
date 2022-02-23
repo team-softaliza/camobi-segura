@@ -291,11 +291,6 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 		}
 	};
 
-	pickImageWithURL = (avatarUrl: string) => {
-		logEvent(events.PROFILE_PICK_AVATAR_WITH_URL);
-		this.setAvatar({ url: avatarUrl, data: avatarUrl, service: 'url' });
-	};
-
 	renderAvatarButton = ({ key, child, onPress, disabled = false }: IAvatarButton) => {
 		const { theme } = this.props;
 		return (
@@ -312,7 +307,7 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 	};
 
 	renderAvatarButtons = () => {
-		const { avatarUrl, avatarSuggestions } = this.state;
+		const { avatarSuggestions } = this.state;
 		const { user, theme, Accounts_AllowUserAvatarChange } = this.props;
 
 		return (
@@ -328,12 +323,6 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 					onPress: () => this.pickImage(),
 					disabled: !Accounts_AllowUserAvatarChange,
 					key: 'profile-view-upload-avatar'
-				})}
-				{this.renderAvatarButton({
-					child: <CustomIcon name='link' size={30} color={themes[theme].bodyText} />,
-					onPress: () => this.pickImageWithURL(avatarUrl!),
-					disabled: !avatarUrl,
-					key: 'profile-view-avatar-url-button'
 				})}
 				{Object.keys(avatarSuggestions).map(service => {
 					const { url, blob, contentType } = avatarSuggestions[service];
@@ -441,17 +430,8 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 	};
 
 	render() {
-		const { name, username, email, newPassword, avatarUrl, customFields, avatar, saving } = this.state;
-		const {
-			user,
-			theme,
-			Accounts_AllowEmailChange,
-			Accounts_AllowPasswordChange,
-			Accounts_AllowRealNameChange,
-			Accounts_AllowUserAvatarChange,
-			Accounts_AllowUsernameChange,
-			Accounts_CustomFields
-		} = this.props;
+		const { name, username, email, avatar, saving } = this.state;
+		const { user, theme, Accounts_AllowEmailChange, Accounts_AllowRealNameChange, Accounts_AllowUsernameChange } = this.props;
 
 		return (
 			<KeyboardView
@@ -512,42 +492,7 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 							testID='profile-view-email'
 							theme={theme}
 						/>
-						<RCTextInput
-							editable={Accounts_AllowPasswordChange}
-							inputStyle={[!Accounts_AllowPasswordChange && styles.disabled]}
-							inputRef={e => {
-								this.newPassword = e;
-							}}
-							label={I18n.t('New_Password')}
-							placeholder={I18n.t('New_Password')}
-							value={newPassword!}
-							onChangeText={value => this.setState({ newPassword: value })}
-							onSubmitEditing={() => {
-								if (Accounts_CustomFields && Object.keys(customFields).length) {
-									// @ts-ignore
-									return this[Object.keys(customFields)[0]].focus();
-								}
-								this.avatarUrl.focus();
-							}}
-							secureTextEntry
-							testID='profile-view-new-password'
-							theme={theme}
-						/>
 						{this.renderCustomFields()}
-						<RCTextInput
-							editable={Accounts_AllowUserAvatarChange}
-							inputStyle={[!Accounts_AllowUserAvatarChange && styles.disabled]}
-							inputRef={e => {
-								this.avatarUrl = e;
-							}}
-							label={I18n.t('Avatar_Url')}
-							placeholder={I18n.t('Avatar_Url')}
-							value={avatarUrl!}
-							onChangeText={value => this.setState({ avatarUrl: value })}
-							onSubmitEditing={this.submit}
-							testID='profile-view-avatar-url'
-							theme={theme}
-						/>
 						{this.renderAvatarButtons()}
 						<Button
 							title={I18n.t('Save_Changes')}
