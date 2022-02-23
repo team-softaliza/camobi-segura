@@ -1045,24 +1045,6 @@ class RoomActionsView extends React.Component {
 							</>
 						) : null}
 
-						{['c', 'p', 'd'].includes(t) ? (
-							<>
-								<List.Item
-									title='Starred'
-									onPress={() =>
-										this.onPressTouchable({
-											route: 'MessagesView',
-											params: { rid, t, name: 'Starred' }
-										})
-									}
-									testID='room-actions-starred'
-									left={() => <List.Icon name='star' />}
-									showActionIndicator
-								/>
-								<List.Separator />
-							</>
-						) : null}
-
 						{['c', 'p', 'd'].includes(t) && canAutoTranslate ? (
 							<>
 								<List.Item
