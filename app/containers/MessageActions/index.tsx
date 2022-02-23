@@ -1,5 +1,5 @@
 import React, { forwardRef, useImperativeHandle } from 'react';
-import { Alert, Clipboard } from 'react-native';
+import { Clipboard } from 'react-native';
 import { connect } from 'react-redux';
 import moment from 'moment';
 
@@ -260,17 +260,6 @@ const MessageActions = React.memo(
 				}
 			};
 
-			const handleReport = async (message: any) => {
-				logEvent(events.ROOM_MSG_ACTION_REPORT);
-				try {
-					await RocketChat.reportMessage(message.id);
-					Alert.alert(I18n.t('Message_Reported'));
-				} catch (e) {
-					logEvent(events.ROOM_MSG_ACTION_REPORT_F);
-					log(e);
-				}
-			};
-
 			const handleDelete = (message: any) => {
 				// TODO - migrate this function for ts when fix the lint erros
 				// @ts-ignore
@@ -372,14 +361,6 @@ const MessageActions = React.memo(
 						onPress: () => handleToggleTranslation(message)
 					});
 				}
-
-				// Report
-				options.push({
-					title: I18n.t('Report'),
-					icon: 'warning',
-					danger: true,
-					onPress: () => handleReport(message)
-				});
 
 				// Delete
 				if (allowDelete(message)) {
