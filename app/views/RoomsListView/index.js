@@ -410,9 +410,7 @@ class RoomsListView extends React.Component {
 			headerRight: () =>
 				searching ? null : (
 					<HeaderButton.Container>
-						{canCreateRoom ? (
-							<HeaderButton.Item iconName='create' onPress={this.goToNewMessage} testID='rooms-list-view-create-channel' />
-						) : null}
+						<HeaderButton.Item iconName='create' onPress={this.goToNewMessage} testID='rooms-list-view-create-channel' />
 						<HeaderButton.Item iconName='search' onPress={this.initSearching} testID='rooms-list-view-search' />
 					</HeaderButton.Container>
 				)
