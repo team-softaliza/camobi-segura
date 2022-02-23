@@ -197,17 +197,6 @@ const MessageActions = React.memo(
 				}
 			};
 
-			const handlePermalink = async (message: any) => {
-				logEvent(events.ROOM_MSG_ACTION_PERMALINK);
-				try {
-					const permalink: any = await getPermalink(message);
-					Clipboard.setString(permalink);
-					EventEmitter.emit(LISTENER, { message: I18n.t('Permalink_copied_to_clipboard') });
-				} catch {
-					logEvent(events.ROOM_MSG_ACTION_PERMALINK_F);
-				}
-			};
-
 			const handleCopy = async (message: any) => {
 				logEvent(events.ROOM_MSG_ACTION_COPY);
 				await Clipboard.setString(message?.attachments?.[0]?.description || message.msg);
@@ -353,13 +342,6 @@ const MessageActions = React.memo(
 						onPress: () => handleEdit(message)
 					});
 				}
-
-				// Permalink
-				options.push({
-					title: I18n.t('Permalink'),
-					icon: 'link',
-					onPress: () => handlePermalink(message)
-				});
 
 				// Create Discussion
 				options.push({
