@@ -73,7 +73,7 @@ const Header = React.memo(
 		} else if (!connected) {
 			subtitle = I18n.t('Waiting_for_network');
 		} else {
-			subtitle = server?.replace(/(^\w+:|^)\/\//, '');
+			subtitle = null;
 		}
 		return (
 			<View style={styles.container}>
