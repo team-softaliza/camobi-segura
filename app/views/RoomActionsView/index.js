@@ -1066,23 +1066,6 @@ class RoomActionsView extends React.Component {
 						{['c', 'p', 'd'].includes(t) ? (
 							<>
 								<List.Item
-									title='Share'
-									onPress={() =>
-										this.onPressTouchable({
-											event: this.handleShare
-										})
-									}
-									testID='room-actions-share'
-									left={() => <List.Icon name='share' />}
-									showActionIndicator
-								/>
-								<List.Separator />
-							</>
-						) : null}
-
-						{['c', 'p', 'd'].includes(t) ? (
-							<>
-								<List.Item
 									title='Pinned'
 									onPress={() =>
 										this.onPressTouchable({
