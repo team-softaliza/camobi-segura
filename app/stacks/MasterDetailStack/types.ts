@@ -91,7 +91,6 @@ export type ModalStackParamList = {
 		rid: string;
 		room: IRoom;
 	};
-	DirectoryView: undefined;
 	QueueListView: undefined;
 	NotificationPrefView: {
 		rid: string;

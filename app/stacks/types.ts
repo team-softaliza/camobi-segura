@@ -81,7 +81,6 @@ export type ChatsStackParamList = {
 		rid: string;
 		room: IRoom;
 	};
-	DirectoryView: undefined;
 	NotificationPrefView: {
 		rid: string;
 		room: Model;

@@ -414,7 +414,6 @@ class RoomsListView extends React.Component {
 							<HeaderButton.Item iconName='create' onPress={this.goToNewMessage} testID='rooms-list-view-create-channel' />
 						) : null}
 						<HeaderButton.Item iconName='search' onPress={this.initSearching} testID='rooms-list-view-search' />
-						<HeaderButton.Item iconName='directory' onPress={this.goDirectory} testID='rooms-list-view-directory' />
 					</HeaderButton.Container>
 				)
 		};
@@ -709,16 +708,6 @@ class RoomsListView extends React.Component {
 		} catch (e) {
 			logEvent(events.RL_HIDE_CHANNEL_F);
 			log(e);
-		}
-	};
-
-	goDirectory = () => {
-		logEvent(events.RL_GO_DIRECTORY);
-		const { navigation, isMasterDetail } = this.props;
-		if (isMasterDetail) {
-			navigation.navigate('ModalStackNavigator', { screen: 'DirectoryView' });
-		} else {
-			navigation.navigate('DirectoryView');
 		}
 	};
 

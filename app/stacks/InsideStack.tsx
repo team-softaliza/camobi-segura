@@ -19,7 +19,6 @@ import InviteUsersView from '../views/InviteUsersView';
 import InviteUsersEditView from '../views/InviteUsersEditView';
 import MessagesView from '../views/MessagesView';
 import AutoTranslateView from '../views/AutoTranslateView';
-import DirectoryView from '../views/DirectoryView';
 import NotificationPrefView from '../views/NotificationPreferencesView';
 import ForwardLivechatView from '../views/ForwardLivechatView';
 import LivechatEditView from '../views/LivechatEditView';
@@ -107,7 +106,6 @@ const ChatsStackNavigator = () => {
 			/>
 			<ChatsStack.Screen name='MessagesView' component={MessagesView} />
 			<ChatsStack.Screen name='AutoTranslateView' component={AutoTranslateView} options={AutoTranslateView.navigationOptions} />
-			<ChatsStack.Screen name='DirectoryView' component={DirectoryView} options={DirectoryView.navigationOptions} />
 			<ChatsStack.Screen
 				name='NotificationPrefView'
 				component={NotificationPrefView}
