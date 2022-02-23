@@ -767,17 +767,6 @@ class MessageBox extends Component<IMessageBoxProps, IMessageBoxState> {
 		Navigation.navigate('ShareView', { room: this.room, thread, attachments });
 	};
 
-	createDiscussion = () => {
-		logEvent(events.ROOM_BOX_ACTION_DISCUSSION);
-		const { isMasterDetail } = this.props;
-		const params = { channel: this.room, showCloseModal: true };
-		if (isMasterDetail) {
-			Navigation.navigate('ModalStackNavigator', { screen: 'CreateDiscussionView', params });
-		} else {
-			Navigation.navigate('NewMessageStackNavigator', { screen: 'CreateDiscussionView', params });
-		}
-	};
-
 	showMessageBoxActions = () => {
 		logEvent(events.ROOM_SHOW_BOX_ACTIONS);
 		const { permissionToUpload } = this.state;
@@ -809,11 +798,6 @@ class MessageBox extends Component<IMessageBoxProps, IMessageBoxState> {
 			);
 		}
 
-		options.push({
-			title: I18n.t('Create_Discussion'),
-			icon: 'discussions',
-			onPress: this.createDiscussion
-		});
 		showActionSheet({ options });
 	};
 
