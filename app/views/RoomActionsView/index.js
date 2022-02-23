@@ -814,27 +814,6 @@ class RoomActionsView extends React.Component {
 			return null;
 		}
 
-		if (t === 'd' && !RocketChat.isGroupChat(room)) {
-			return (
-				<List.Section>
-					<List.Separator />
-					<List.Item
-						title={`${blocker ? 'Unblock' : 'Block'}_user`}
-						onPress={() =>
-							this.onPressTouchable({
-								event: this.toggleBlockUser
-							})
-						}
-						testID='room-actions-block-user'
-						left={() => <List.Icon name='ignore' color={themes[theme].dangerColor} />}
-						showActionIndicator
-						color={themes[theme].dangerColor}
-					/>
-					<List.Separator />
-				</List.Section>
-			);
-		}
-
 		return null;
 	};
 
