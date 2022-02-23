@@ -835,27 +835,6 @@ class RoomActionsView extends React.Component {
 			);
 		}
 
-		if (t === 'p' || t === 'c') {
-			return (
-				<List.Section>
-					<List.Separator />
-					<List.Item
-						title='Leave'
-						onPress={() =>
-							this.onPressTouchable({
-								event: room.teamMain ? this.leaveTeam : this.leaveChannel
-							})
-						}
-						testID='room-actions-leave-channel'
-						left={() => <List.Icon name='logout' color={themes[theme].dangerColor} />}
-						showActionIndicator
-						color={themes[theme].dangerColor}
-					/>
-					<List.Separator />
-				</List.Section>
-			);
-		}
-
 		return null;
 	};
 
