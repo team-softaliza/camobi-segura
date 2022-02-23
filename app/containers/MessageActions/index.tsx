@@ -1,5 +1,5 @@
 import React, { forwardRef, useImperativeHandle } from 'react';
-import { Alert, Clipboard, Share } from 'react-native';
+import { Alert, Clipboard } from 'react-native';
 import { connect } from 'react-redux';
 import moment from 'moment';
 
@@ -150,8 +150,6 @@ const MessageActions = React.memo(
 				return true;
 			};
 
-			const getPermalink = (message: any) => RocketChat.getPermalinkMessage(message);
-
 			const handleReply = (message: any) => {
 				logEvent(events.ROOM_MSG_ACTION_REPLY);
 				replyInit(message, true);
@@ -191,16 +189,6 @@ const MessageActions = React.memo(
 				logEvent(events.ROOM_MSG_ACTION_COPY);
 				await Clipboard.setString(message?.attachments?.[0]?.description || message.msg);
 				EventEmitter.emit(LISTENER, { message: I18n.t('Copied_to_clipboard') });
-			};
-
-			const handleShare = async (message: any) => {
-				logEvent(events.ROOM_MSG_ACTION_SHARE);
-				try {
-					const permalink: any = await getPermalink(message);
-					Share.share({ message: permalink });
-				} catch {
-					logEvent(events.ROOM_MSG_ACTION_SHARE_F);
-				}
 			};
 
 			const handleQuote = (message: any) => {
@@ -347,13 +335,6 @@ const MessageActions = React.memo(
 					title: I18n.t('Copy'),
 					icon: 'copy',
 					onPress: () => handleCopy(message)
-				});
-
-				// Share
-				options.push({
-					title: I18n.t('Share'),
-					icon: 'share',
-					onPress: () => handleShare(message)
 				});
 
 				// Star
