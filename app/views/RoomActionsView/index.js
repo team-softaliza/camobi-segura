@@ -1063,24 +1063,6 @@ class RoomActionsView extends React.Component {
 							</>
 						) : null}
 
-						{['c', 'p', 'd'].includes(t) ? (
-							<>
-								<List.Item
-									title='Pinned'
-									onPress={() =>
-										this.onPressTouchable({
-											route: 'MessagesView',
-											params: { rid, t, name: 'Pinned' }
-										})
-									}
-									testID='room-actions-pinned'
-									left={() => <List.Icon name='pin' />}
-									showActionIndicator
-								/>
-								<List.Separator />
-							</>
-						) : null}
-
 						{['c', 'p', 'd'].includes(t) && canAutoTranslate ? (
 							<>
 								<List.Item
