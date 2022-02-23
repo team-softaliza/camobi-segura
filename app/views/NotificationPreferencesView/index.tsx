@@ -200,17 +200,6 @@ class NotificationPreferencesView extends React.Component<INotificationPreferenc
 						<List.Separator />
 						<List.Info info='Push_Notifications_Alert_Info' />
 					</List.Section>
-
-					<List.Section title='Email'>
-						<List.Separator />
-						<List.Item
-							title='Alert'
-							testID='notification-preference-view-email-alert'
-							onPress={(title: string) => this.pickerSelection(title, 'emailNotifications')}
-							right={() => this.renderPickerOption('emailNotifications')}
-						/>
-						<List.Separator />
-					</List.Section>
 				</List.Container>
 			</SafeAreaView>
 		);
