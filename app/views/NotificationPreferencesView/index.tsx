@@ -201,31 +201,6 @@ class NotificationPreferencesView extends React.Component<INotificationPreferenc
 						<List.Info info='Push_Notifications_Alert_Info' />
 					</List.Section>
 
-					<List.Section title='Desktop_Options'>
-						<List.Separator />
-						<List.Item
-							title='Audio'
-							testID='notification-preference-view-audio'
-							onPress={(title: string) => this.pickerSelection(title, 'audioNotifications')}
-							right={() => this.renderPickerOption('audioNotifications')}
-						/>
-						<List.Separator />
-						<List.Item
-							title='Sound'
-							testID='notification-preference-view-sound'
-							onPress={(title: string) => this.pickerSelection(title, 'audioNotificationValue')}
-							right={() => this.renderPickerOption('audioNotificationValue')}
-						/>
-						<List.Separator />
-						<List.Item
-							title='Notification_Duration'
-							testID='notification-preference-view-notification-duration'
-							onPress={(title: string) => this.pickerSelection(title, 'desktopNotificationDuration')}
-							right={() => this.renderPickerOption('desktopNotificationDuration')}
-						/>
-						<List.Separator />
-					</List.Section>
-
 					<List.Section title='Email'>
 						<List.Separator />
 						<List.Item
