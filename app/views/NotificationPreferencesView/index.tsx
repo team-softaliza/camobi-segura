@@ -189,18 +189,6 @@ class NotificationPreferencesView extends React.Component<INotificationPreferenc
 						<List.Info info='Show_Unread_Counter_Info' />
 					</List.Section>
 
-					<List.Section title='In_App_And_Desktop'>
-						<List.Separator />
-						<List.Item
-							title='Alert'
-							testID='notification-preference-view-alert'
-							onPress={(title: string) => this.pickerSelection(title, 'desktopNotifications')}
-							right={() => this.renderPickerOption('desktopNotifications')}
-						/>
-						<List.Separator />
-						<List.Info info='In_App_and_Desktop_Alert_info' />
-					</List.Section>
-
 					<List.Section title='Push_Notifications'>
 						<List.Separator />
 						<List.Item
