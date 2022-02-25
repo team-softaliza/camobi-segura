@@ -76,7 +76,7 @@ git push origin dev
 
 Resolve the conflicts in the code, and in the app versions conflicts, always keep your current change.
 
-<img alt="Conflicts" src=".github/version-conflicts.png" />
+<img alt="Version conflicts" src=".github/version-conflicts.png" />
 
 ## 📝 Updating iOS push notification certificates
 
@@ -89,12 +89,12 @@ After that date, you must generate new certificates, otherwise iOS push notifica
 - Access Certificates, Identifiers & Profiles
 - On the Identifiers tab, click on the RocketChat Softaliza identifier
 
-<img alt="Conflicts" src=".github/apple-identifiers.png" />
+<img alt="Apple identifiers" src=".github/apple-identifiers.png" />
 
 - Find Push Notifications capability and click on the Edit button
 - You will see the Development and Production SSL certificates expiration
 
-<img alt="Conflicts" src=".github/apple-certificates-expiration.png" />
+<img alt="Apple certificates expiration" src=".github/apple-certificates-expiration.png" />
 
 ### Creating Push Notifications certificates
 
@@ -104,4 +104,6 @@ After that, you must update the certificates in the server settings. To do this,
 
 ## 📦 Resources
 
-The images and icons used in the app and in the android/apple stores can be found in the resources folder of this project, and also in the following links:
+The images and icons used on the app and on the android/apple stores can be found in the resources folder of this project, and also in the following links: </br>
+
+[Figma Camobi Segura - App icons](https://www.figma.com/file/7bczH8xrL08V32YAaZsmks/Camobi-Segura---App-icons?node-id=0%3A1)
