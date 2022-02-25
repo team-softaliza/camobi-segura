@@ -26,7 +26,7 @@ dev
 ```
 Production branch
 ```cl
-prod
+production
 ```
 White label branch on Rocket.Chat.ReactNative
 ```
