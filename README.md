@@ -74,7 +74,7 @@ git push origin dev
 
 ### Resolving conflicts
 
-Resolve the conflicts in the code, and in the app versions conflicts, always keep your current change.
+Resolve the conflicts in the code. In the app versions conflicts, always keep your current change.
 
 <img alt="Version conflicts" src=".github/version-conflicts.png" />
 
