@@ -104,6 +104,7 @@ After that, you must update the certificates in the server settings. To do this,
 
 ## 📦 Resources
 
-The images and icons used on the app and on the android/apple stores can be found in the resources folder of this project, and also in the following links: </br>
+The images, icons, keystore and certficates used on the app and on the android/apple stores can be found in the resources folder of this project, and also in the following links: </br>
 
-[Figma Camobi Segura - App icons](https://www.figma.com/file/7bczH8xrL08V32YAaZsmks/Camobi-Segura---App-icons?node-id=0%3A1)
+- [Figma Camobi Segura - App icons and screenshots](https://www.figma.com/file/7bczH8xrL08V32YAaZsmks/Camobi-Segura---App-icons-and-screenshots?node-id=0%3A1) 
+- [Google Drive](https://drive.google.com/drive/folders/1qbFNq_USaLRpBQN4LWOXYHgwK0xOBU1-)
