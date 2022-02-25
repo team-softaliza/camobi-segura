@@ -1,41 +1,107 @@
-# Rocket.Chat Mobile
+<h1 align="center">
+  <img alt="Camobi Segura" height="170" title="Camobi Segura" src="resources/android/icon/icon.png" />
+</h1>
 
-[![Project Dependencies](https://david-dm.org/RocketChat/Rocket.Chat.ReactNative.svg)](https://david-dm.org/RocketChat/Rocket.Chat.ReactNative)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bb15e2392a71473ea59d3f634f35c54e)](https://www.codacy.com/app/RocketChat/Rocket.Chat.ReactNative?utm_source=github.com&utm_medium=referral&utm_content=RocketChat/Rocket.Chat.ReactNative&utm_campaign=badger)
-[![codecov](https://codecov.io/gh/RocketChat/Rocket.Chat.ReactNative/branch/master/graph/badge.svg)](https://codecov.io/gh/RocketChat/Rocket.Chat.ReactNative)
-[![CodeFactor](https://www.codefactor.io/repository/github/rocketchat/rocket.chat.reactnative/badge)](https://www.codefactor.io/repository/github/rocketchat/rocket.chat.reactnative)
+<h1 align="center">
+  Camobi Segura
+</h1>
 
-- **Supported server versions:** 0.70.0+
-- **Supported iOS versions**: 11+
-- **Supported Android versions**: 6.0+
+<p align="center">This is a chat app to Camobi, Santa Maria - RS residents communicate with public security authorities and improve everyone's safety.</p>
+<p align="center">The app is built on top of the <a href="https://github.com/RocketChat/Rocket.Chat.ReactNative">Rocket.Chat.ReactNative</a>.</p>
 
-## Download
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=rocket.chat.softaliza">
+    <img alt="Download on Google Play" src="https://play.google.com/intl/en_us/badges/images/badge_new.png" height=43>
+  </a>
+  <a href="https://apps.apple.com/br/app/camobi-segura/id1515168312">
+    <img alt="Download on App Store" src="https://user-images.githubusercontent.com/7317008/43209852-4ca39622-904b-11e8-8ce1-cdc3aee76ae9.png" height=43>
+  </a>
+</p>
 
-<a href="https://play.google.com/store/apps/details?id=chat.rocket.android">
-  <img alt="Download on Google Play" src="https://play.google.com/intl/en_us/badges/images/badge_new.png" height=43>
-</a>
-<a href="https://apps.apple.com/us/app/rocket-chat/id1148741252">
-  <img alt="Download on App Store" src="https://user-images.githubusercontent.com/7317008/43209852-4ca39622-904b-11e8-8ce1-cdc3aee76ae9.png" height=43>
-</a>
+## 🔀 Branches
 
-Check [our docs](https://docs.rocket.chat/installation/mobile-and-desktop-apps#mobile-apps) for  beta and Experimental versions.
+Development branch
+```cl
+dev
+```
+Production branch
+```cl
+prod
+```
+White label branch on Rocket.Chat.ReactNative
+```
+single-server
+```
 
-## Reporting an Issue
+## 🎉 Starting
 
-[Github Issues](https://github.com/RocketChat/Rocket.Chat.ReactNative/issues) are used to track todos, bugs, feature requests, and more.
+Install project dependencies.
 
-Also check the [#react-native](https://open.rocket.chat/channel/react-native) community on [open.rocket.chat](https://open.rocket.chat). We'd like to help.
+```cl
+yarn # or npm install
+# install specific iOS dependencies
+cd ios
+pod install 
+cd ..
+```
 
-## Contributing
+Then start the project.
 
-Are you a dev and would like to help? Found a bug that you would like to report or a missing feature that you would like to work on? Great! We have written down a [Contribution guide](https://github.com/RocketChat/Rocket.Chat.ReactNative/blob/develop/CONTRIBUTING.md) so you can start easily.
+```cl
+yarn react-native start --reset-cache
+# start iOS app
+yarn ios 
+# start android app
+yarn android 
+```
 
-## Whitelabel
-Do you want to make the app run on your own server only? [Follow our whitelabel documentation.](https://developer.rocket.chat/mobile-app/mobile-app-white-labelling)
+## 🚀  Updating with last Rocket.Chat.ReactNative version
 
-## Engage with us
-### Share your story
-We’d love to hear about [your experience](https://survey.zohopublic.com/zs/e4BUFG) and potentially feature it on our [blog](https://rocket.chat/case-studies/?utm_source=github&utm_medium=readme&utm_campaign=community).
+```cl
+# add the rocket chat public repo as public remote
+git remote add public https://github.com/RocketChat/Rocket.Chat.ReactNative.git 
+git checkout dev
+# creates a merge commit from public repo single-server branch (whitelabel branch)
+git pull public single-server
+```
 
-### Subscribe for Updates
-Once a month our marketing team releases an email update with news about product releases, company related topics, events and use cases. [Sign up!](https://rocket.chat/newsletter/?utm_source=github&utm_medium=readme&utm_campaign=community)
+Probably this merge will generate conflicts. Resolve them and commit the merge. <br /> 
+After that, test the app to see if everything is working, then push to the dev branch ✨
+
+```cl
+git push origin dev
+```
+
+### Resolving conflicts
+
+Resolve the conflicts in the code, and in the app versions conflicts, always keep your current change.
+
+<img alt="Conflicts" src=".github/version-conflicts.png" />
+
+## 📝 Updating iOS push notification certificates
+
+iOS push notifications certificates have an expiration date. <br /> 
+After that date, you must generate new certificates, otherwise iOS push notifications will stop working.
+
+### Checking the expiration date
+
+- Access the apple developer portal
+- Access Certificates, Identifiers & Profiles
+- On the Identifiers tab, click on the RocketChat Softaliza identifier
+
+<img alt="Conflicts" src=".github/apple-identifiers.png" />
+
+- Find Push Notifications capability and click on the Edit button
+- You will see the Development and Production SSL certificates expiration
+
+<img alt="Conflicts" src=".github/apple-certificates-expiration.png" />
+
+### Creating Push Notifications certificates
+
+To generate new certificates, access [Rocket.Chat iOS white labelling docs](https://developer.rocket.chat/mobile-app/mobile-app-white-labelling/ios-app-white-labelling) and follow exactly the steps described in the **Creating Push Notifications certificates** section.
+
+After that, you must update the certificates in the server settings. To do this, access the [server's admin panel](https://chat.camobisegura.com.br/admin/Push) and follow exactly the steps described in the **Configuring iOS** section in [Rocket.Chat configuring push notifications docs](https://developer.rocket.chat/mobile-app/mobile-app-white-labelling/configuring-push-notifications).
+
+## 📦 Resources
+
+The images and icons used in the app and in the android/apple stores can be found in the resources folder of this project, and also in the following links:
