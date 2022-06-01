@@ -39,6 +39,6 @@ yarn ios
 yarn android 
 ```
 
-## 📦 Resources
+## 📦 Recursos
 
 As imagens, ícones, chaves de acesso e certificados usados no aplicativo e nas lojas android/apple podem ser encontrados na pasta de recursos.
