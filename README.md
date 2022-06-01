@@ -7,7 +7,6 @@
 </h1>
 
 <p align="center">This is a chat app to Camobi, Santa Maria - RS residents communicate with public security authorities and improve everyone's safety.</p>
-<p align="center">The app is built on top of the <a href="https://github.com/RocketChat/Rocket.Chat.ReactNative">Rocket.Chat.ReactNative</a>.</p>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=rocket.chat.softaliza">
@@ -17,21 +16,6 @@
     <img alt="Download on App Store" src="https://user-images.githubusercontent.com/7317008/43209852-4ca39622-904b-11e8-8ce1-cdc3aee76ae9.png" height=43>
   </a>
 </p>
-
-## 🔀 Branches
-
-Development branch
-```cl
-dev
-```
-Production branch
-```cl
-production
-```
-White label branch on Rocket.Chat.ReactNative
-```
-single-server
-```
 
 ## 🎉 Starting
 
@@ -54,29 +38,6 @@ yarn ios
 # start android app
 yarn android 
 ```
-
-## 🚀  Updating with last Rocket.Chat.ReactNative version
-
-```cl
-# add the rocket chat public repo as public remote
-git remote add public https://github.com/RocketChat/Rocket.Chat.ReactNative.git 
-git checkout dev
-# creates a merge commit from public repo single-server branch (whitelabel branch)
-git pull public single-server
-```
-
-Probably this merge will generate conflicts. Resolve them and commit the merge. <br /> 
-After that, test the app to see if everything is working, then push to the dev branch ✨
-
-```cl
-git push origin dev
-```
-
-### Resolving conflicts
-
-Resolve the conflicts in the code. In the app versions conflicts, always keep your current change.
-
-<img alt="Version conflicts" src=".github/version-conflicts.png" />
 
 ## 📝 Updating iOS push notification certificates
 
