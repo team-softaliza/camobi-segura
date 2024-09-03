@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package rocket.chat.softaliza;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

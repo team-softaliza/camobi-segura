@@ -814,48 +814,6 @@ class RoomActionsView extends React.Component {
 			return null;
 		}
 
-		if (t === 'd' && !RocketChat.isGroupChat(room)) {
-			return (
-				<List.Section>
-					<List.Separator />
-					<List.Item
-						title={`${blocker ? 'Unblock' : 'Block'}_user`}
-						onPress={() =>
-							this.onPressTouchable({
-								event: this.toggleBlockUser
-							})
-						}
-						testID='room-actions-block-user'
-						left={() => <List.Icon name='ignore' color={themes[theme].dangerColor} />}
-						showActionIndicator
-						color={themes[theme].dangerColor}
-					/>
-					<List.Separator />
-				</List.Section>
-			);
-		}
-
-		if (t === 'p' || t === 'c') {
-			return (
-				<List.Section>
-					<List.Separator />
-					<List.Item
-						title='Leave'
-						onPress={() =>
-							this.onPressTouchable({
-								event: room.teamMain ? this.leaveTeam : this.leaveChannel
-							})
-						}
-						testID='room-actions-leave-channel'
-						left={() => <List.Icon name='logout' color={themes[theme].dangerColor} />}
-						showActionIndicator
-						color={themes[theme].dangerColor}
-					/>
-					<List.Separator />
-				</List.Section>
-			);
-		}
-
 		return null;
 	};
 
@@ -1039,59 +997,6 @@ class RoomActionsView extends React.Component {
 									}
 									testID='room-actions-mentioned'
 									left={() => <List.Icon name='mention' />}
-									showActionIndicator
-								/>
-								<List.Separator />
-							</>
-						) : null}
-
-						{['c', 'p', 'd'].includes(t) ? (
-							<>
-								<List.Item
-									title='Starred'
-									onPress={() =>
-										this.onPressTouchable({
-											route: 'MessagesView',
-											params: { rid, t, name: 'Starred' }
-										})
-									}
-									testID='room-actions-starred'
-									left={() => <List.Icon name='star' />}
-									showActionIndicator
-								/>
-								<List.Separator />
-							</>
-						) : null}
-
-						{['c', 'p', 'd'].includes(t) ? (
-							<>
-								<List.Item
-									title='Share'
-									onPress={() =>
-										this.onPressTouchable({
-											event: this.handleShare
-										})
-									}
-									testID='room-actions-share'
-									left={() => <List.Icon name='share' />}
-									showActionIndicator
-								/>
-								<List.Separator />
-							</>
-						) : null}
-
-						{['c', 'p', 'd'].includes(t) ? (
-							<>
-								<List.Item
-									title='Pinned'
-									onPress={() =>
-										this.onPressTouchable({
-											route: 'MessagesView',
-											params: { rid, t, name: 'Pinned' }
-										})
-									}
-									testID='room-actions-pinned'
-									left={() => <List.Icon name='pin' />}
 									showActionIndicator
 								/>
 								<List.Separator />

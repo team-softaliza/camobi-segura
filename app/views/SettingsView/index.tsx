@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clipboard, Linking, Share } from 'react-native';
+import { Clipboard, Linking } from 'react-native';
 import { connect } from 'react-redux';
 import FastImage from '@rocket.chat/react-native-fast-image';
 import CookieManager from '@react-native-cookies/cookies';
@@ -14,11 +14,9 @@ import StatusBar from '../../containers/StatusBar';
 import * as List from '../../containers/List';
 import I18n from '../../i18n';
 import RocketChat from '../../lib/rocketchat';
-import { getDeviceModel, getReadableVersion, isAndroid } from '../../utils/deviceInfo';
-import openLink from '../../utils/openLink';
+import { getDeviceModel, getReadableVersion } from '../../utils/deviceInfo';
 import { showConfirmationAlert, showErrorAlert } from '../../utils/info';
 import { events, logEvent } from '../../utils/log';
-import { APP_STORE_LINK, FDROID_MARKET_LINK, LICENSE_LINK, PLAY_MARKET_LINK } from '../../constants/links';
 import { withTheme } from '../../theme';
 import SidebarView from '../SidebarView';
 import { LISTENER } from '../../containers/Toast';
@@ -125,8 +123,8 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 
 	sendEmail = async () => {
 		logEvent(events.SE_CONTACT_US);
-		const subject = encodeURI('React Native App Support');
-		const email = encodeURI('support@rocket.chat');
+		const subject = encodeURI('Camobi Segura Chat App Suporte');
+		const email = encodeURI('camobisegura@gmail.com');
 		const description = encodeURI(`
 			version: ${getReadableVersion}
 			device: ${getDeviceModel}
@@ -135,34 +133,8 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 			await Linking.openURL(`mailto:${email}?subject=${subject}&body=${description}`);
 		} catch (e) {
 			logEvent(events.SE_CONTACT_US_F);
-			showErrorAlert(I18n.t('error-email-send-failed', { message: 'support@rocket.chat' }));
+			showErrorAlert(I18n.t('error-email-send-failed', { message: 'camobisegura@gmail.com' }));
 		}
-	};
-
-	shareApp = () => {
-		let message;
-		if (isAndroid) {
-			message = PLAY_MARKET_LINK;
-			if (isFDroidBuild) {
-				message = FDROID_MARKET_LINK;
-			}
-		} else {
-			message = APP_STORE_LINK;
-		}
-		Share.share({ message });
-	};
-
-	copyServerVersion = () => {
-		const {
-			server: { version }
-		} = this.props;
-		logEvent(events.SE_COPY_SERVER_VERSION, { serverVersion: version });
-		this.saveToClipboard(version);
-	};
-
-	copyAppVersion = () => {
-		logEvent(events.SE_COPY_APP_VERSION, { appVersion: getReadableVersion });
-		this.saveToClipboard(getReadableVersion);
 	};
 
 	saveToClipboard = async (content: string) => {
@@ -170,14 +142,8 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 		EventEmitter.emit(LISTENER, { message: I18n.t('Copied_to_clipboard') });
 	};
 
-	onPressLicense = () => {
-		logEvent(events.SE_READ_LICENSE);
-		const { theme } = this.props;
-		openLink(LICENSE_LINK, theme);
-	};
-
 	render() {
-		const { server, isMasterDetail, theme } = this.props;
+		const { isMasterDetail, theme } = this.props;
 		return (
 			<SafeAreaView testID='settings-view'>
 				<StatusBar />
@@ -208,13 +174,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 						<List.Separator />
 						<List.Item title='Contact_us' onPress={this.sendEmail} showActionIndicator testID='settings-view-contact' />
 						<List.Separator />
-						<List.Item
-							title='Language'
-							onPress={() => this.navigateToScreen('LanguageView')}
-							showActionIndicator
-							testID='settings-view-language'
-						/>
-						<List.Separator />
 						{!isFDroidBuild ? (
 							<>
 								<List.Item
@@ -225,8 +184,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 								/>
 							</>
 						) : null}
-						<List.Separator />
-						<List.Item title='Share_this_app' showActionIndicator onPress={this.shareApp} testID='settings-view-share-app' />
 						<List.Separator />
 						<List.Item
 							title='Default_browser'
@@ -247,28 +204,6 @@ class SettingsView extends React.Component<ISettingsViewProps, any> {
 							showActionIndicator
 							onPress={() => this.navigateToScreen('SecurityPrivacyView')}
 							testID='settings-view-security-privacy'
-						/>
-						<List.Separator />
-					</List.Section>
-
-					<List.Section>
-						<List.Separator />
-						<List.Item title='License' onPress={this.onPressLicense} showActionIndicator testID='settings-view-license' />
-						<List.Separator />
-						<List.Item
-							title={I18n.t('Version_no', { version: getReadableVersion })}
-							onPress={this.copyAppVersion}
-							testID='settings-view-version'
-							translateTitle={false}
-						/>
-						<List.Separator />
-						<List.Item
-							title={I18n.t('Server_version', { version: server.version })}
-							onPress={this.copyServerVersion}
-							subtitle={`${server.server.split('//')[1]}`}
-							testID='settings-view-server-version'
-							translateTitle={false}
-							translateSubtitle={false}
 						/>
 						<List.Separator />
 					</List.Section>

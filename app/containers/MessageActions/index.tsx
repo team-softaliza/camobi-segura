@@ -1,5 +1,5 @@
 import React, { forwardRef, useImperativeHandle } from 'react';
-import { Alert, Clipboard, Share } from 'react-native';
+import { Clipboard } from 'react-native';
 import { connect } from 'react-redux';
 import moment from 'moment';
 
@@ -150,8 +150,6 @@ const MessageActions = React.memo(
 				return true;
 			};
 
-			const getPermalink = (message: any) => RocketChat.getPermalinkMessage(message);
-
 			const handleReply = (message: any) => {
 				logEvent(events.ROOM_MSG_ACTION_REPLY);
 				replyInit(message, true);
@@ -160,16 +158,6 @@ const MessageActions = React.memo(
 			const handleEdit = (message: any) => {
 				logEvent(events.ROOM_MSG_ACTION_EDIT);
 				editInit(message);
-			};
-
-			const handleCreateDiscussion = (message: any) => {
-				logEvent(events.ROOM_MSG_ACTION_DISCUSSION);
-				const params = { message, channel: room, showCloseModal: true };
-				if (isMasterDetail) {
-					Navigation.navigate('ModalStackNavigator', { screen: 'CreateDiscussionView', params });
-				} else {
-					Navigation.navigate('NewMessageStackNavigator', { screen: 'CreateDiscussionView', params });
-				}
 			};
 
 			const handleUnread = async (message: any) => {
@@ -197,31 +185,10 @@ const MessageActions = React.memo(
 				}
 			};
 
-			const handlePermalink = async (message: any) => {
-				logEvent(events.ROOM_MSG_ACTION_PERMALINK);
-				try {
-					const permalink: any = await getPermalink(message);
-					Clipboard.setString(permalink);
-					EventEmitter.emit(LISTENER, { message: I18n.t('Permalink_copied_to_clipboard') });
-				} catch {
-					logEvent(events.ROOM_MSG_ACTION_PERMALINK_F);
-				}
-			};
-
 			const handleCopy = async (message: any) => {
 				logEvent(events.ROOM_MSG_ACTION_COPY);
 				await Clipboard.setString(message?.attachments?.[0]?.description || message.msg);
 				EventEmitter.emit(LISTENER, { message: I18n.t('Copied_to_clipboard') });
-			};
-
-			const handleShare = async (message: any) => {
-				logEvent(events.ROOM_MSG_ACTION_SHARE);
-				try {
-					const permalink: any = await getPermalink(message);
-					Share.share({ message: permalink });
-				} catch {
-					logEvent(events.ROOM_MSG_ACTION_SHARE_F);
-				}
 			};
 
 			const handleQuote = (message: any) => {
@@ -293,17 +260,6 @@ const MessageActions = React.memo(
 				}
 			};
 
-			const handleReport = async (message: any) => {
-				logEvent(events.ROOM_MSG_ACTION_REPORT);
-				try {
-					await RocketChat.reportMessage(message.id);
-					Alert.alert(I18n.t('Message_Reported'));
-				} catch (e) {
-					logEvent(events.ROOM_MSG_ACTION_REPORT_F);
-					log(e);
-				}
-			};
-
 			const handleDelete = (message: any) => {
 				showConfirmationAlert({
 					message: I18n.t('You_will_not_be_able_to_recover_this_message'),
@@ -352,20 +308,6 @@ const MessageActions = React.memo(
 					});
 				}
 
-				// Permalink
-				options.push({
-					title: I18n.t('Permalink'),
-					icon: 'link',
-					onPress: () => handlePermalink(message)
-				});
-
-				// Create Discussion
-				options.push({
-					title: I18n.t('Start_a_Discussion'),
-					icon: 'discussions',
-					onPress: () => handleCreateDiscussion(message)
-				});
-
 				// Mark as unread
 				if (message.u && message.u._id !== user.id) {
 					options.push({
@@ -380,13 +322,6 @@ const MessageActions = React.memo(
 					title: I18n.t('Copy'),
 					icon: 'copy',
 					onPress: () => handleCopy(message)
-				});
-
-				// Share
-				options.push({
-					title: I18n.t('Share'),
-					icon: 'share',
-					onPress: () => handleShare(message)
 				});
 
 				// Star
@@ -424,14 +359,6 @@ const MessageActions = React.memo(
 						onPress: () => handleToggleTranslation(message)
 					});
 				}
-
-				// Report
-				options.push({
-					title: I18n.t('Report'),
-					icon: 'warning',
-					danger: true,
-					onPress: () => handleReport(message)
-				});
 
 				// Delete
 				if (allowDelete(message)) {

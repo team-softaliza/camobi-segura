@@ -2,19 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IS_OFFICIAL</key>
-	<false/>
 	<key>AppGroup</key>
-	<string>group.ios.chat.rocket</string>
-	<key>bugsnag</key>
-	<dict>
-		<key>apiKey</key>
-		<string>apiKeyValue</string>
-	</dict>
+	<string>group.rocket.chat.softaliza</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>Camobi Segura</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,7 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.24.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -44,10 +37,12 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>IS_OFFICIAL</key>
+	<false/>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>KeychainGroup</key>
-	<string>$(AppIdentifierPrefix)chat.rocket.reactnative</string>
+	<string>$(AppIdentifierPrefix)rocket.chat.softaliza</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechrome</string>
@@ -85,7 +80,7 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Use your microphone to record audio messages</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Allow $(PRODUCT_NAME) to access your device&apos;s accelerometer</string>
+	<string>Allow $(PRODUCT_NAME) to access your device's accelerometer</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Give $(PRODUCT_NAME) permission to save photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -105,6 +100,7 @@
 	<array>
 		<string>audio</string>
 		<string>fetch</string>
+		<string>remote-notification</string>
 		<string>voip</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
@@ -122,5 +118,10 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>bugsnag</key>
+	<dict>
+		<key>apiKey</key>
+		<string>0900898d261aad8d41440ff13ae0341c</string>
+	</dict>
 </dict>
 </plist>

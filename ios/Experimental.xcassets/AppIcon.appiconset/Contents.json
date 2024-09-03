@@ -1,151 +1,151 @@
 {
   "images" : [
     {
-      "filename" : "40.png",
+      "filename" : "01 iPhone Notifications 20pt@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "60.png",
+      "filename" : "02 iPhone Notifications 20pt@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "29.png",
+      "filename" : "03 iPhone Settings 29pt.png",
       "idiom" : "iphone",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "58.png",
+      "filename" : "04 iPhone Settings 29pt@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "87.png",
+      "filename" : "05 iPhone Settings 29pt@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "80.png",
+      "filename" : "06 iPhone Spotlight 40pt@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "120.png",
+      "filename" : "07 iPhone Spotlight 40pt@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "57.png",
+      "filename" : "08 iPhone App 57pt.png",
       "idiom" : "iphone",
       "scale" : "1x",
       "size" : "57x57"
     },
     {
-      "filename" : "114.png",
+      "filename" : "09 iPhone App 57pt@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "57x57"
     },
     {
-      "filename" : "120.png",
+      "filename" : "10 iPhone App 60pt@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "180.png",
+      "filename" : "11 iPhone App 60pt@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "20.png",
+      "filename" : "12 iPad Notifications 20pt.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "40.png",
+      "filename" : "13 iPad Notifications 20pt@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "29.png",
+      "filename" : "14 iPad Settings 29pt.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "58.png",
+      "filename" : "15 iPad Settings 29pt@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "40.png",
+      "filename" : "16 iPad Spotlight 40pt.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "80.png",
+      "filename" : "17 iPad Spotlight 40pt@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "50.png",
+      "filename" : "18 iPad Spotlight 50pt.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "50x50"
     },
     {
-      "filename" : "100.png",
+      "filename" : "19 iPad Spotlight 50pt@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "50x50"
     },
     {
-      "filename" : "72.png",
+      "filename" : "20 iPad App 72pt.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "72x72"
     },
     {
-      "filename" : "144.png",
+      "filename" : "21 iPad App 72pt@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "72x72"
     },
     {
-      "filename" : "76.png",
+      "filename" : "22 iPad App 76pt.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "152.png",
+      "filename" : "23 iPad App 76pt@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "167.png",
+      "filename" : "24 iPad Pro App 83.5pt@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "1024.png",
+      "filename" : "25 App Store 1024pt.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

@@ -13,7 +13,7 @@ import Touch from '../../utils/touch';
 import KeyboardView from '../../presentation/KeyboardView';
 import sharedStyles from '../Styles';
 import scrollPersistTaps from '../../utils/scrollPersistTaps';
-import { showConfirmationAlert, showErrorAlert } from '../../utils/info';
+import { showErrorAlert } from '../../utils/info';
 import { LISTENER } from '../../containers/Toast';
 import EventEmitter from '../../utils/events';
 import RocketChat from '../../lib/rocketchat';
@@ -291,11 +291,6 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 		}
 	};
 
-	pickImageWithURL = (avatarUrl: string) => {
-		logEvent(events.PROFILE_PICK_AVATAR_WITH_URL);
-		this.setAvatar({ url: avatarUrl, data: avatarUrl, service: 'url' });
-	};
-
 	renderAvatarButton = ({ key, child, onPress, disabled = false }: IAvatarButton) => {
 		const { theme } = this.props;
 		return (
@@ -312,7 +307,7 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 	};
 
 	renderAvatarButtons = () => {
-		const { avatarUrl, avatarSuggestions } = this.state;
+		const { avatarSuggestions } = this.state;
 		const { user, theme, Accounts_AllowUserAvatarChange } = this.props;
 
 		return (
@@ -328,12 +323,6 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 					onPress: () => this.pickImage(),
 					disabled: !Accounts_AllowUserAvatarChange,
 					key: 'profile-view-upload-avatar'
-				})}
-				{this.renderAvatarButton({
-					child: <CustomIcon name='link' size={30} color={themes[theme].bodyText} />,
-					onPress: () => this.pickImageWithURL(avatarUrl!),
-					disabled: !avatarUrl,
-					key: 'profile-view-avatar-url-button'
 				})}
 				{Object.keys(avatarSuggestions).map(service => {
 					const { url, blob, contentType } = avatarSuggestions[service];
@@ -422,35 +411,9 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 		}
 	};
 
-	logoutOtherLocations = () => {
-		logEvent(events.PL_OTHER_LOCATIONS);
-		showConfirmationAlert({
-			message: I18n.t('You_will_be_logged_out_from_other_locations'),
-			confirmationText: I18n.t('Logout'),
-			onPress: async () => {
-				try {
-					await RocketChat.logoutOtherLocations();
-					EventEmitter.emit(LISTENER, { message: I18n.t('Logged_out_of_other_clients_successfully') });
-				} catch {
-					logEvent(events.PL_OTHER_LOCATIONS_F);
-					EventEmitter.emit(LISTENER, { message: I18n.t('Logout_failed') });
-				}
-			}
-		});
-	};
-
 	render() {
-		const { name, username, email, newPassword, avatarUrl, customFields, avatar, saving } = this.state;
-		const {
-			user,
-			theme,
-			Accounts_AllowEmailChange,
-			Accounts_AllowPasswordChange,
-			Accounts_AllowRealNameChange,
-			Accounts_AllowUserAvatarChange,
-			Accounts_AllowUsernameChange,
-			Accounts_CustomFields
-		} = this.props;
+		const { name, username, email, avatar, saving } = this.state;
+		const { user, theme, Accounts_AllowEmailChange, Accounts_AllowRealNameChange, Accounts_AllowUsernameChange } = this.props;
 
 		return (
 			<KeyboardView
@@ -511,42 +474,7 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 							testID='profile-view-email'
 							theme={theme}
 						/>
-						<RCTextInput
-							editable={Accounts_AllowPasswordChange}
-							inputStyle={[!Accounts_AllowPasswordChange && styles.disabled]}
-							inputRef={e => {
-								this.newPassword = e;
-							}}
-							label={I18n.t('New_Password')}
-							placeholder={I18n.t('New_Password')}
-							value={newPassword!}
-							onChangeText={value => this.setState({ newPassword: value })}
-							onSubmitEditing={() => {
-								if (Accounts_CustomFields && Object.keys(customFields).length) {
-									// @ts-ignore
-									return this[Object.keys(customFields)[0]].focus();
-								}
-								this.avatarUrl.focus();
-							}}
-							secureTextEntry
-							testID='profile-view-new-password'
-							theme={theme}
-						/>
 						{this.renderCustomFields()}
-						<RCTextInput
-							editable={Accounts_AllowUserAvatarChange}
-							inputStyle={[!Accounts_AllowUserAvatarChange && styles.disabled]}
-							inputRef={e => {
-								this.avatarUrl = e;
-							}}
-							label={I18n.t('Avatar_Url')}
-							placeholder={I18n.t('Avatar_Url')}
-							value={avatarUrl!}
-							onChangeText={value => this.setState({ avatarUrl: value })}
-							onSubmitEditing={this.submit}
-							testID='profile-view-avatar-url'
-							theme={theme}
-						/>
 						{this.renderAvatarButtons()}
 						<Button
 							title={I18n.t('Save_Changes')}
@@ -555,14 +483,6 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 							disabled={!this.formIsChanged()}
 							testID='profile-view-submit'
 							loading={saving}
-							theme={theme}
-						/>
-						<Button
-							title={I18n.t('Logout_from_other_logged_in_locations')}
-							type='secondary'
-							backgroundColor={themes[theme].chatComponentBackground}
-							onPress={this.logoutOtherLocations}
-							testID='profile-view-logout-other-locations'
 							theme={theme}
 						/>
 					</ScrollView>

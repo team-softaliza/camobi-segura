@@ -41,9 +41,6 @@ const styles = StyleSheet.create({
 	buttonText: {
 		fontSize: 17,
 		...sharedStyles.textRegular
-	},
-	buttonContainer: {
-		paddingVertical: 25
 	}
 });
 
@@ -241,7 +238,7 @@ class NewMessageView extends React.Component<INewMessageViewProps, INewMessageVi
 		return (
 			<View style={{ backgroundColor: themes[theme].auxiliaryBackground }}>
 				<SearchBox onChangeText={(text: string) => this.onSearchChangeText(text)} testID='new-message-view-search' />
-				<View style={styles.buttonContainer}>
+				<View>
 					{permissions[0] || permissions[1]
 						? this.renderButton({
 								onPress: this.createChannel,

@@ -18,7 +18,6 @@ import InviteUsersView from '../../views/InviteUsersView';
 import InviteUsersEditView from '../../views/InviteUsersEditView';
 import MessagesView from '../../views/MessagesView';
 import AutoTranslateView from '../../views/AutoTranslateView';
-import DirectoryView from '../../views/DirectoryView';
 import NotificationPrefView from '../../views/NotificationPreferencesView';
 import ForwardLivechatView from '../../views/ForwardLivechatView';
 import CannedResponsesListView from '../../views/CannedResponsesListView';
@@ -142,11 +141,6 @@ const ModalStackNavigator = React.memo(({ navigation }: INavigation) => {
 				/>
 				<ModalStack.Screen name='MessagesView' component={MessagesView} />
 				<ModalStack.Screen name='AutoTranslateView' component={AutoTranslateView} options={AutoTranslateView.navigationOptions} />
-				<ModalStack.Screen
-					name='DirectoryView'
-					component={DirectoryView}
-					options={props => DirectoryView.navigationOptions!({ ...props, isMasterDetail: true })}
-				/>
 				<ModalStack.Screen
 					name='QueueListView'
 					component={QueueListView}

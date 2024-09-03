@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "784760005046",
+    "firebase_url": "https://rocket-chat-softaliza.firebaseio.com",
+    "project_id": "rocket-chat-softaliza",
+    "storage_bucket": "rocket-chat-softaliza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784760005046:android:a090ad4cc32949a0006117",
+        "android_client_info": {
+          "package_name": "rocket.chat.softaliza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784760005046-dihnsrkneo8dddibhhnkugd6ofs8eevl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0U6AXDQVP7i0ROaqMUZtDeB9wfVskgRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784760005046-dihnsrkneo8dddibhhnkugd6ofs8eevl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "784760005046-ppat1qecpc94p1dg9t4qo45e0cfd7hnn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "rocket.chat.softaliza"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

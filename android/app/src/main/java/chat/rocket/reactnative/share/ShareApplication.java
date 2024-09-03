@@ -1,6 +1,6 @@
-package chat.rocket.reactnative.share;
+package rocket.chat.softaliza.share;
 
-import chat.rocket.reactnative.BuildConfig;
+import rocket.chat.softaliza.BuildConfig;
 
 import chat.rocket.SharePackage;
 

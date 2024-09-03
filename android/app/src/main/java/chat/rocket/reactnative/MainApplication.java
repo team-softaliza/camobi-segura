@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package rocket.chat.softaliza;
 
 import android.app.Application;
 
@@ -19,8 +19,8 @@ import org.unimodules.adapters.react.ReactModuleRegistryProvider;
 import java.util.Arrays;
 import java.util.List;
 
-import chat.rocket.reactnative.generated.BasePackageList;
-import chat.rocket.reactnative.networking.SSLPinningPackage;
+import rocket.chat.softaliza.generated.BasePackageList;
+import rocket.chat.softaliza.networking.SSLPinningPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 

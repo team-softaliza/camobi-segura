@@ -189,18 +189,6 @@ class NotificationPreferencesView extends React.Component<INotificationPreferenc
 						<List.Info info='Show_Unread_Counter_Info' />
 					</List.Section>
 
-					<List.Section title='In_App_And_Desktop'>
-						<List.Separator />
-						<List.Item
-							title='Alert'
-							testID='notification-preference-view-alert'
-							onPress={(title: string) => this.pickerSelection(title, 'desktopNotifications')}
-							right={() => this.renderPickerOption('desktopNotifications')}
-						/>
-						<List.Separator />
-						<List.Info info='In_App_and_Desktop_Alert_info' />
-					</List.Section>
-
 					<List.Section title='Push_Notifications'>
 						<List.Separator />
 						<List.Item
@@ -211,42 +199,6 @@ class NotificationPreferencesView extends React.Component<INotificationPreferenc
 						/>
 						<List.Separator />
 						<List.Info info='Push_Notifications_Alert_Info' />
-					</List.Section>
-
-					<List.Section title='Desktop_Options'>
-						<List.Separator />
-						<List.Item
-							title='Audio'
-							testID='notification-preference-view-audio'
-							onPress={(title: string) => this.pickerSelection(title, 'audioNotifications')}
-							right={() => this.renderPickerOption('audioNotifications')}
-						/>
-						<List.Separator />
-						<List.Item
-							title='Sound'
-							testID='notification-preference-view-sound'
-							onPress={(title: string) => this.pickerSelection(title, 'audioNotificationValue')}
-							right={() => this.renderPickerOption('audioNotificationValue')}
-						/>
-						<List.Separator />
-						<List.Item
-							title='Notification_Duration'
-							testID='notification-preference-view-notification-duration'
-							onPress={(title: string) => this.pickerSelection(title, 'desktopNotificationDuration')}
-							right={() => this.renderPickerOption('desktopNotificationDuration')}
-						/>
-						<List.Separator />
-					</List.Section>
-
-					<List.Section title='Email'>
-						<List.Separator />
-						<List.Item
-							title='Alert'
-							testID='notification-preference-view-email-alert'
-							onPress={(title: string) => this.pickerSelection(title, 'emailNotifications')}
-							right={() => this.renderPickerOption('emailNotifications')}
-						/>
-						<List.Separator />
 					</List.Section>
 				</List.Container>
 			</SafeAreaView>

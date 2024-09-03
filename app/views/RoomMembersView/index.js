@@ -75,7 +75,7 @@ class RoomMembersView extends React.Component {
 		const room = props.route.params?.room;
 		this.state = {
 			isLoading: false,
-			allUsers: false,
+			allUsers: true,
 			filtering: false,
 			rid,
 			members: [],

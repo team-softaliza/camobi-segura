@@ -82,7 +82,6 @@ export type ChatsStackParamList = {
 		rid: string;
 		room: TSubscriptionModel;
 	};
-	DirectoryView: undefined;
 	NotificationPrefView: {
 		rid: string;
 		room: Model;

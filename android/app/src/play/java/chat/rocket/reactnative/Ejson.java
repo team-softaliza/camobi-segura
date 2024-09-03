@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package rocket.chat.softaliza;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.Callback;

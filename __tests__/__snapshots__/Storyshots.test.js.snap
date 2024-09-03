@@ -2559,7 +2559,7 @@ Array [
               ]
             }
           >
-            Cancel
+            Cancelar
           </Text>
         </View>
       </View>
@@ -4672,7 +4672,7 @@ exports[`Storyshots List alert 1`] = `
                 ]
               }
             >
-              Chats
+              Conversas
             </Text>
             <Text
               allowFontScaling={false}
@@ -4880,7 +4880,7 @@ exports[`Storyshots List alert 1`] = `
                 ]
               }
             >
-              Chats
+              Conversas
             </Text>
             <Text
               allowFontScaling={false}
@@ -5156,7 +5156,7 @@ exports[`Storyshots List header 1`] = `
           ]
         }
       >
-        Chats
+        Conversas
       </Text>
     </View>
     <View
@@ -5540,7 +5540,7 @@ exports[`Storyshots List title and subtitle 1`] = `
                 ]
               }
             >
-              Chats
+              Conversas
             </Text>
           </View>
         </View>
@@ -5617,7 +5617,7 @@ exports[`Storyshots List title and subtitle 1`] = `
                 ]
               }
             >
-              Chats
+              Conversas
             </Text>
           </View>
           <Text
@@ -5637,7 +5637,7 @@ exports[`Storyshots List title and subtitle 1`] = `
               ]
             }
           >
-            All
+            Todos
           </Text>
         </View>
       </View>
@@ -6776,7 +6776,7 @@ exports[`Storyshots List with bigger font 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
         <View
@@ -6883,7 +6883,7 @@ exports[`Storyshots List with bigger font 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -6903,7 +6903,7 @@ exports[`Storyshots List with bigger font 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -7053,7 +7053,7 @@ exports[`Storyshots List with bigger font 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -7073,7 +7073,7 @@ exports[`Storyshots List with bigger font 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -7154,7 +7154,7 @@ exports[`Storyshots List with bigger font 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
       </View>
@@ -7190,7 +7190,7 @@ exports[`Storyshots List with bigger font 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
         <View
@@ -7297,7 +7297,7 @@ exports[`Storyshots List with bigger font 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -7317,7 +7317,7 @@ exports[`Storyshots List with bigger font 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -7467,7 +7467,7 @@ exports[`Storyshots List with bigger font 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -7487,7 +7487,7 @@ exports[`Storyshots List with bigger font 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -7568,7 +7568,7 @@ exports[`Storyshots List with bigger font 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
       </View>
@@ -7645,7 +7645,7 @@ exports[`Storyshots List with black theme 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
         <View
@@ -7752,7 +7752,7 @@ exports[`Storyshots List with black theme 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -7772,7 +7772,7 @@ exports[`Storyshots List with black theme 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -7922,7 +7922,7 @@ exports[`Storyshots List with black theme 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -7942,7 +7942,7 @@ exports[`Storyshots List with black theme 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -8023,7 +8023,7 @@ exports[`Storyshots List with black theme 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
       </View>
@@ -8059,7 +8059,7 @@ exports[`Storyshots List with black theme 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
         <View
@@ -8166,7 +8166,7 @@ exports[`Storyshots List with black theme 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -8186,7 +8186,7 @@ exports[`Storyshots List with black theme 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -8336,7 +8336,7 @@ exports[`Storyshots List with black theme 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -8356,7 +8356,7 @@ exports[`Storyshots List with black theme 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -8437,7 +8437,7 @@ exports[`Storyshots List with black theme 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
       </View>
@@ -8534,7 +8534,7 @@ exports[`Storyshots List with custom colors 1`] = `
                 ]
               }
             >
-              Chats
+              Conversas
             </Text>
           </View>
         </View>
@@ -8694,7 +8694,7 @@ exports[`Storyshots List with dark theme 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
         <View
@@ -8801,7 +8801,7 @@ exports[`Storyshots List with dark theme 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -8821,7 +8821,7 @@ exports[`Storyshots List with dark theme 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -8971,7 +8971,7 @@ exports[`Storyshots List with dark theme 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -8991,7 +8991,7 @@ exports[`Storyshots List with dark theme 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -9072,7 +9072,7 @@ exports[`Storyshots List with dark theme 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
       </View>
@@ -9108,7 +9108,7 @@ exports[`Storyshots List with dark theme 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
         <View
@@ -9215,7 +9215,7 @@ exports[`Storyshots List with dark theme 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -9235,7 +9235,7 @@ exports[`Storyshots List with dark theme 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -9385,7 +9385,7 @@ exports[`Storyshots List with dark theme 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -9405,7 +9405,7 @@ exports[`Storyshots List with dark theme 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -9486,7 +9486,7 @@ exports[`Storyshots List with dark theme 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
       </View>
@@ -10474,7 +10474,7 @@ exports[`Storyshots List with section and info 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
         <View
@@ -10668,7 +10668,7 @@ exports[`Storyshots List with section and info 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
       </View>
@@ -10975,7 +10975,7 @@ exports[`Storyshots List with small font 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
         <View
@@ -11082,7 +11082,7 @@ exports[`Storyshots List with small font 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -11102,7 +11102,7 @@ exports[`Storyshots List with small font 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -11252,7 +11252,7 @@ exports[`Storyshots List with small font 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -11272,7 +11272,7 @@ exports[`Storyshots List with small font 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -11353,7 +11353,7 @@ exports[`Storyshots List with small font 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
       </View>
@@ -11389,7 +11389,7 @@ exports[`Storyshots List with small font 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
         <View
@@ -11496,7 +11496,7 @@ exports[`Storyshots List with small font 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -11516,7 +11516,7 @@ exports[`Storyshots List with small font 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -11666,7 +11666,7 @@ exports[`Storyshots List with small font 1`] = `
                   ]
                 }
               >
-                Chats
+                Conversas
               </Text>
             </View>
             <Text
@@ -11686,7 +11686,7 @@ exports[`Storyshots List with small font 1`] = `
                 ]
               }
             >
-              All
+              Todos
             </Text>
           </View>
           <View
@@ -11767,7 +11767,7 @@ exports[`Storyshots List with small font 1`] = `
               ]
             }
           >
-            Chats
+            Conversas
           </Text>
         </View>
       </View>
@@ -11794,7 +11794,7 @@ Array [
       ]
     }
   >
-    Load More
+    Carregar mais
   </Text>,
   <Text
     style={
@@ -11812,7 +11812,7 @@ Array [
       ]
     }
   >
-    Load More
+    Carregar mais
   </Text>,
   <Text
     style={
@@ -11830,7 +11830,7 @@ Array [
       ]
     }
   >
-    Load Older
+    Carregar mais antigas
   </Text>,
   <Text
     style={
@@ -11848,7 +11848,7 @@ Array [
       ]
     }
   >
-    Load Newer
+    Carregar mais novas
   </Text>,
 ]
 `;
@@ -11878,7 +11878,7 @@ exports[`Storyshots LoadMore black theme 1`] = `
         ]
       }
     >
-      Load Older
+      Carregar mais antigas
     </Text>
     <View
       accessible={true}
@@ -12065,7 +12065,7 @@ exports[`Storyshots LoadMore black theme 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -12344,7 +12344,7 @@ exports[`Storyshots LoadMore black theme 1`] = `
         ]
       }
     >
-      Load Newer
+      Carregar mais novas
     </Text>
     <Text
       style={
@@ -12362,7 +12362,7 @@ exports[`Storyshots LoadMore black theme 1`] = `
         ]
       }
     >
-      Load More
+      Carregar mais
     </Text>
     <View
       accessible={true}
@@ -12549,7 +12549,7 @@ exports[`Storyshots LoadMore black theme 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -12997,7 +12997,7 @@ exports[`Storyshots LoadMore black theme 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -13083,7 +13083,7 @@ exports[`Storyshots LoadMore dark theme 1`] = `
         ]
       }
     >
-      Load Older
+      Carregar mais antigas
     </Text>
     <View
       accessible={true}
@@ -13270,7 +13270,7 @@ exports[`Storyshots LoadMore dark theme 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -13549,7 +13549,7 @@ exports[`Storyshots LoadMore dark theme 1`] = `
         ]
       }
     >
-      Load Newer
+      Carregar mais novas
     </Text>
     <Text
       style={
@@ -13567,7 +13567,7 @@ exports[`Storyshots LoadMore dark theme 1`] = `
         ]
       }
     >
-      Load More
+      Carregar mais
     </Text>
     <View
       accessible={true}
@@ -13754,7 +13754,7 @@ exports[`Storyshots LoadMore dark theme 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -14202,7 +14202,7 @@ exports[`Storyshots LoadMore dark theme 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -14288,7 +14288,7 @@ exports[`Storyshots LoadMore light theme 1`] = `
         ]
       }
     >
-      Load Older
+      Carregar mais antigas
     </Text>
     <View
       accessible={true}
@@ -14475,7 +14475,7 @@ exports[`Storyshots LoadMore light theme 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -14754,7 +14754,7 @@ exports[`Storyshots LoadMore light theme 1`] = `
         ]
       }
     >
-      Load Newer
+      Carregar mais novas
     </Text>
     <Text
       style={
@@ -14772,7 +14772,7 @@ exports[`Storyshots LoadMore light theme 1`] = `
         ]
       }
     >
-      Load More
+      Carregar mais
     </Text>
     <View
       accessible={true}
@@ -14959,7 +14959,7 @@ exports[`Storyshots LoadMore light theme 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -15407,7 +15407,7 @@ exports[`Storyshots LoadMore light theme 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -15915,7 +15915,7 @@ exports[`Storyshots Markdown Edited 1`] = `
       }
     >
        (
-      edited
+      editado
       )
     </Text>
   </Text>
@@ -18606,7 +18606,7 @@ exports[`Storyshots Markdown Table 1`] = `
         ]
       }
     >
-      Click to see full table
+      Clique para ver a tabela completa
     </Text>
   </View>
 </View>
@@ -19267,7 +19267,7 @@ exports[`Storyshots Message Archived 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -19522,7 +19522,7 @@ exports[`Storyshots Message Basic 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -19764,7 +19764,7 @@ exports[`Storyshots Message Basic 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -20019,7 +20019,7 @@ exports[`Storyshots Message Block Quote 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -20293,7 +20293,7 @@ exports[`Storyshots Message Block Quote 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -20627,7 +20627,7 @@ exports[`Storyshots Message Broadcast 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -20758,7 +20758,7 @@ exports[`Storyshots Message Broadcast 1`] = `
                       ]
                     }
                   >
-                    Reply
+                    Responder
                   </Text>
                 </View>
               </View>
@@ -20965,7 +20965,7 @@ exports[`Storyshots Message Colored attachments 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View />
@@ -21802,7 +21802,7 @@ exports[`Storyshots Message Custom fields 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -22568,7 +22568,7 @@ exports[`Storyshots Message Custom style 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -22823,7 +22823,7 @@ exports[`Storyshots Message Date and Unread separators 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -22907,7 +22907,7 @@ exports[`Storyshots Message Date and Unread separators 1`] = `
           ]
         }
       >
-        unread
+        não lidas
       </Text>
       <View
         style={
@@ -22941,7 +22941,7 @@ exports[`Storyshots Message Date and Unread separators 1`] = `
           ]
         }
       >
-        November 10, 2017
+        10 de novembro de 2017
       </Text>
     </View>
     <View
@@ -23129,7 +23129,7 @@ exports[`Storyshots Message Date and Unread separators 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -23216,7 +23216,7 @@ exports[`Storyshots Message Date and Unread separators 1`] = `
           ]
         }
       >
-        unread
+        não lidas
       </Text>
       <View
         style={
@@ -23520,7 +23520,7 @@ exports[`Storyshots Message Date and Unread separators 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -23620,7 +23620,7 @@ exports[`Storyshots Message Date and Unread separators 1`] = `
           ]
         }
       >
-        November 10, 2017
+        10 de novembro de 2017
       </Text>
     </View>
     <View
@@ -23808,7 +23808,7 @@ exports[`Storyshots Message Date and Unread separators 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -24063,7 +24063,7 @@ exports[`Storyshots Message Discussion 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <Text
@@ -24084,7 +24084,7 @@ exports[`Storyshots Message Discussion 1`] = `
                   ]
                 }
               >
-                Started a discussion:
+                Iniciou uma discussão:
               </Text>
               <Text
                 style={
@@ -24182,7 +24182,7 @@ exports[`Storyshots Message Discussion 1`] = `
                       ]
                     }
                   >
-                    No messages yet
+                    Não há mensagens ainda
                   </Text>
                 </View>
                 <Text
@@ -24393,7 +24393,7 @@ exports[`Storyshots Message Discussion 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <Text
@@ -24414,7 +24414,7 @@ exports[`Storyshots Message Discussion 1`] = `
                   ]
                 }
               >
-                Started a discussion:
+                Iniciou uma discussão:
               </Text>
               <Text
                 style={
@@ -24512,7 +24512,7 @@ exports[`Storyshots Message Discussion 1`] = `
                       ]
                     }
                   >
-                    1 message
+                    1 mensagem
                   </Text>
                 </View>
                 <Text
@@ -24532,7 +24532,7 @@ exports[`Storyshots Message Discussion 1`] = `
                     ]
                   }
                 >
-                  November 10, 2017
+                  10 de novembro de 2017
                 </Text>
               </View>
             </View>
@@ -24725,7 +24725,7 @@ exports[`Storyshots Message Discussion 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <Text
@@ -24746,7 +24746,7 @@ exports[`Storyshots Message Discussion 1`] = `
                   ]
                 }
               >
-                Started a discussion:
+                Iniciou uma discussão:
               </Text>
               <Text
                 style={
@@ -24844,7 +24844,7 @@ exports[`Storyshots Message Discussion 1`] = `
                       ]
                     }
                   >
-                    10 messages
+                    10 mensagens
                   </Text>
                 </View>
                 <Text
@@ -24864,7 +24864,7 @@ exports[`Storyshots Message Discussion 1`] = `
                     ]
                   }
                 >
-                  November 10, 2017
+                  10 de novembro de 2017
                 </Text>
               </View>
             </View>
@@ -25057,7 +25057,7 @@ exports[`Storyshots Message Discussion 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <Text
@@ -25078,7 +25078,7 @@ exports[`Storyshots Message Discussion 1`] = `
                   ]
                 }
               >
-                Started a discussion:
+                Iniciou uma discussão:
               </Text>
               <Text
                 style={
@@ -25176,7 +25176,7 @@ exports[`Storyshots Message Discussion 1`] = `
                       ]
                     }
                   >
-                    +999 messages
+                    +999 mensagens
                   </Text>
                 </View>
                 <Text
@@ -25196,7 +25196,7 @@ exports[`Storyshots Message Discussion 1`] = `
                     ]
                   }
                 >
-                  November 10, 2017
+                  10 de novembro de 2017
                 </Text>
               </View>
             </View>
@@ -25402,7 +25402,7 @@ exports[`Storyshots Message Edited 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -25657,7 +25657,7 @@ exports[`Storyshots Message Editing 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -25912,7 +25912,7 @@ exports[`Storyshots Message Emojis 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -26160,7 +26160,7 @@ exports[`Storyshots Message Emojis 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -26408,7 +26408,7 @@ exports[`Storyshots Message Emojis 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -26795,7 +26795,7 @@ exports[`Storyshots Message Emojis 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -27044,7 +27044,7 @@ exports[`Storyshots Message Emojis 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -27327,7 +27327,7 @@ exports[`Storyshots Message Emojis 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -27645,7 +27645,7 @@ exports[`Storyshots Message Encrypted 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -28114,7 +28114,7 @@ exports[`Storyshots Message Encrypted 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -29001,7 +29001,7 @@ exports[`Storyshots Message Encrypted 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View
@@ -29311,7 +29311,7 @@ exports[`Storyshots Message Encrypted 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -29598,7 +29598,7 @@ exports[`Storyshots Message Encrypted 1`] = `
                   ]
                 }
               >
-                10:00 AM
+                10:00
               </Text>
               <View
                 accessible={true}
@@ -29948,7 +29948,7 @@ exports[`Storyshots Message Encrypted 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -30457,7 +30457,7 @@ exports[`Storyshots Message Error 1`] = `
                   ]
                 }
               >
-                10:00 AM
+                10:00
               </Text>
               <View
                 accessible={true}
@@ -30659,7 +30659,7 @@ exports[`Storyshots Message Error 1`] = `
                   ]
                 }
               >
-                10:00 AM
+                10:00
               </Text>
               <View
                 accessible={true}
@@ -30960,7 +30960,7 @@ exports[`Storyshots Message Full name 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -31215,7 +31215,7 @@ exports[`Storyshots Message Grouped messages 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -31457,7 +31457,7 @@ exports[`Storyshots Message Grouped messages 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -31905,7 +31905,7 @@ exports[`Storyshots Message Grouped messages 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -32111,7 +32111,7 @@ exports[`Storyshots Message Ignored 1`] = `
                     ]
                   }
                 >
-                  Message ignored. Tap to display it.
+                  Mensagem ignorada. Toque para mostrar.
                 </Text>
               </View>
             </View>
@@ -32317,7 +32317,7 @@ exports[`Storyshots Message Lists 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -32783,7 +32783,7 @@ exports[`Storyshots Message Lists 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -33156,7 +33156,7 @@ exports[`Storyshots Message Lists 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -33598,7 +33598,7 @@ exports[`Storyshots Message Mentions 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -34017,7 +34017,7 @@ exports[`Storyshots Message Mentions 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -34477,7 +34477,7 @@ exports[`Storyshots Message Message with read receipt 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -34822,7 +34822,7 @@ exports[`Storyshots Message Message with read receipt 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -35224,7 +35224,7 @@ exports[`Storyshots Message Message with reply 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -35577,7 +35577,7 @@ exports[`Storyshots Message Message with reply 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -35978,7 +35978,7 @@ exports[`Storyshots Message Message with thread 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -36073,7 +36073,7 @@ exports[`Storyshots Message Message with thread 1`] = `
                       ]
                     }
                   >
-                    Reply
+                    Responder
                   </Text>
                 </View>
                 <View
@@ -37710,7 +37710,7 @@ exports[`Storyshots Message Message with thread 1`] = `
                     ]
                   }
                 >
-                  Sent an attachment
+                  Enviou um anexo
                 </Text>
               </View>
             </View>
@@ -37916,7 +37916,7 @@ exports[`Storyshots Message Reactions 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -38579,7 +38579,7 @@ exports[`Storyshots Message Reactions 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -39619,7 +39619,7 @@ exports[`Storyshots Message Sequential thread messages following thread button 1
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -39714,7 +39714,7 @@ exports[`Storyshots Message Sequential thread messages following thread button 1
                       ]
                     }
                   >
-                    Reply
+                    Responder
                   </Text>
                 </View>
                 <View
@@ -40334,7 +40334,7 @@ exports[`Storyshots Message Sequential thread messages following thread button 1
                     ]
                   }
                 >
-                  Sent an attachment
+                  Enviou um anexo
                 </Text>
               </View>
             </View>
@@ -41022,7 +41022,7 @@ exports[`Storyshots Message Sequential thread messages following thread reply 1`
                     ]
                   }
                 >
-                  Sent an attachment
+                  Enviou um anexo
                 </Text>
               </View>
             </View>
@@ -41228,7 +41228,7 @@ exports[`Storyshots Message Show a button as attachment 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View />
@@ -41493,7 +41493,7 @@ exports[`Storyshots Message Static avatar 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -41704,7 +41704,7 @@ exports[`Storyshots Message System messages 1`] = `
                 </Text>
                  
                 <Text
-                  accessibilityLabel="Message removed"
+                  accessibilityLabel="Mensagem removida"
                   style={
                     Array [
                       Object {
@@ -41721,7 +41721,7 @@ exports[`Storyshots Message System messages 1`] = `
                     ]
                   }
                 >
-                  Message removed
+                  Mensagem removida
                 </Text>
               </Text>
             </View>
@@ -41870,7 +41870,7 @@ exports[`Storyshots Message System messages 1`] = `
                 </Text>
                  
                 <Text
-                  accessibilityLabel="has joined the channel"
+                  accessibilityLabel="entrou no canal"
                   style={
                     Array [
                       Object {
@@ -41887,7 +41887,7 @@ exports[`Storyshots Message System messages 1`] = `
                     ]
                   }
                 >
-                  has joined the channel
+                  entrou no canal
                 </Text>
               </Text>
             </View>
@@ -42036,7 +42036,7 @@ exports[`Storyshots Message System messages 1`] = `
                 </Text>
                  
                 <Text
-                  accessibilityLabel="Message pinned"
+                  accessibilityLabel="Fixou uma mensagem"
                   style={
                     Array [
                       Object {
@@ -42053,7 +42053,7 @@ exports[`Storyshots Message System messages 1`] = `
                     ]
                   }
                 >
-                  Message pinned
+                  Fixou uma mensagem
                 </Text>
               </Text>
             </View>
@@ -42202,7 +42202,7 @@ exports[`Storyshots Message System messages 1`] = `
                 </Text>
                  
                 <Text
-                  accessibilityLabel="has left the channel"
+                  accessibilityLabel="saiu da conversa"
                   style={
                     Array [
                       Object {
@@ -42219,7 +42219,7 @@ exports[`Storyshots Message System messages 1`] = `
                     ]
                   }
                 >
-                  has left the channel
+                  saiu da conversa
                 </Text>
               </Text>
             </View>
@@ -42346,7 +42346,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="User rocket.cat removed by diego.mello"
+                accessibilityLabel="Usuário rocket.cat removido por diego.mello"
                 style={
                   Array [
                     Object {
@@ -42363,7 +42363,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                User rocket.cat removed by diego.mello
+                Usuário rocket.cat removido por diego.mello
               </Text>
             </View>
           </View>
@@ -42489,7 +42489,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="User rocket.cat added by diego.mello"
+                accessibilityLabel="Usuário rocket.cat adicionado por diego.mello"
                 style={
                   Array [
                     Object {
@@ -42506,7 +42506,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                User rocket.cat added by diego.mello
+                Usuário rocket.cat adicionado por diego.mello
               </Text>
             </View>
           </View>
@@ -42632,7 +42632,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="User rocket.cat muted by diego.mello"
+                accessibilityLabel="User rocket.cat muted por diego.mello"
                 style={
                   Array [
                     Object {
@@ -42649,7 +42649,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                User rocket.cat muted by diego.mello
+                User rocket.cat muted por diego.mello
               </Text>
             </View>
           </View>
@@ -42775,7 +42775,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="User rocket.cat unmuted by diego.mello"
+                accessibilityLabel="diego.mello permitiu que rocket.cat fale na sala"
                 style={
                   Array [
                     Object {
@@ -42792,7 +42792,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                User rocket.cat unmuted by diego.mello
+                diego.mello permitiu que rocket.cat fale na sala
               </Text>
             </View>
           </View>
@@ -43204,7 +43204,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="Room name changed to: New name by diego.mello"
+                accessibilityLabel="Nome da sala alterado para: New name por diego.mello"
                 style={
                   Array [
                     Object {
@@ -43221,7 +43221,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                Room name changed to: New name by diego.mello
+                Nome da sala alterado para: New name por diego.mello
               </Text>
             </View>
           </View>
@@ -43347,7 +43347,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="Room description changed to: new description by diego.mello"
+                accessibilityLabel="A descrição da sala foi alterada para: new description por diego.mello"
                 style={
                   Array [
                     Object {
@@ -43364,7 +43364,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                Room description changed to: new description by diego.mello
+                A descrição da sala foi alterada para: new description por diego.mello
               </Text>
             </View>
           </View>
@@ -43490,7 +43490,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="Room announcement changed to: new announcement by diego.mello"
+                accessibilityLabel="O anúncio da sala foi alterado para: new announcement por diego.mello"
                 style={
                   Array [
                     Object {
@@ -43507,7 +43507,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                Room announcement changed to: new announcement by diego.mello
+                O anúncio da sala foi alterado para: new announcement por diego.mello
               </Text>
             </View>
           </View>
@@ -43633,7 +43633,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="Room topic changed to: new topic by diego.mello"
+                accessibilityLabel="Tópico da sala mudou para: new topic por diego.mello"
                 style={
                   Array [
                     Object {
@@ -43650,7 +43650,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                Room topic changed to: new topic by diego.mello
+                Tópico da sala mudou para: new topic por diego.mello
               </Text>
             </View>
           </View>
@@ -43776,7 +43776,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="Room type changed to: public by diego.mello"
+                accessibilityLabel="Tipo da sala mudou para: public por diego.mello"
                 style={
                   Array [
                     Object {
@@ -43793,7 +43793,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                Room type changed to: public by diego.mello
+                Tipo da sala mudou para: public por diego.mello
               </Text>
             </View>
           </View>
@@ -43919,7 +43919,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="This room's encryption has been disabled by diego.mello"
+                accessibilityLabel="A criptografia para essa sala foi desabilitada por diego.mello"
                 style={
                   Array [
                     Object {
@@ -43936,7 +43936,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                This room's encryption has been disabled by diego.mello
+                A criptografia para essa sala foi desabilitada por diego.mello
               </Text>
             </View>
           </View>
@@ -44062,7 +44062,7 @@ exports[`Storyshots Message System messages 1`] = `
               }
             >
               <Text
-                accessibilityLabel="This room's encryption has been enabled by diego.mello"
+                accessibilityLabel="A criptografia para essa sala foi habilitada por diego.mello"
                 style={
                   Array [
                     Object {
@@ -44079,7 +44079,7 @@ exports[`Storyshots Message System messages 1`] = `
                   ]
                 }
               >
-                This room's encryption has been enabled by diego.mello
+                A criptografia para essa sala foi habilitada por diego.mello
               </Text>
             </View>
           </View>
@@ -44284,7 +44284,7 @@ exports[`Storyshots Message Temp 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View
@@ -44545,7 +44545,7 @@ exports[`Storyshots Message Thumbnail from server 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -44947,7 +44947,7 @@ exports[`Storyshots Message Time format 1`] = `
                     ]
                   }
                 >
-                  10 November 2017
+                  10 novembro 2017
                 </Text>
               </View>
               <View>
@@ -45202,7 +45202,7 @@ exports[`Storyshots Message Two short custom fields with markdown 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -46032,7 +46032,7 @@ exports[`Storyshots Message URL 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View />
@@ -46407,7 +46407,7 @@ exports[`Storyshots Message URL 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -46919,7 +46919,7 @@ exports[`Storyshots Message With alias 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -47180,7 +47180,7 @@ exports[`Storyshots Message With alias 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View>
@@ -47435,7 +47435,7 @@ exports[`Storyshots Message With audio 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View />
@@ -48543,7 +48543,7 @@ exports[`Storyshots Message With file 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View />
@@ -49149,7 +49149,7 @@ exports[`Storyshots Message With image 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View />
@@ -49468,7 +49468,7 @@ exports[`Storyshots Message With image 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View />
@@ -49835,7 +49835,7 @@ exports[`Storyshots Message With video 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View />
@@ -50153,7 +50153,7 @@ exports[`Storyshots Message With video 1`] = `
                     ]
                   }
                 >
-                  10:00 AM
+                  10:00
                 </Text>
               </View>
               <View />
@@ -58831,7 +58831,7 @@ exports[`Storyshots Room Item Condensed Room Item 1`] = `
                       ]
                     }
                   >
-                    Auto-join
+                    Entrada Automática
                   </Text>
                 </View>
                 <View
@@ -59914,7 +59914,7 @@ exports[`Storyshots Room Item Condensed Room Item without Avatar 1`] = `
                       ]
                     }
                   >
-                    Auto-join
+                    Entrada Automática
                   </Text>
                 </View>
                 <View
@@ -61551,7 +61551,7 @@ exports[`Storyshots Room Item Last Message 1`] = `
                 }
               >
                 <Text
-                  accessibilityLabel="No Message"
+                  accessibilityLabel="Não há mensagens"
                   numberOfLines={2}
                   style={
                     Array [
@@ -61581,7 +61581,7 @@ exports[`Storyshots Room Item Last Message 1`] = `
                   }
                   testID="room-item-last-message"
                 >
-                  No Message
+                  Não há mensagens
                 </Text>
               </View>
             </View>
@@ -62351,7 +62351,7 @@ exports[`Storyshots Room Item Last Message 1`] = `
                 }
               >
                 <Text
-                  accessibilityLabel="You: 1"
+                  accessibilityLabel="Você: 1"
                   numberOfLines={2}
                   style={
                     Array [
@@ -62381,7 +62381,7 @@ exports[`Storyshots Room Item Last Message 1`] = `
                   }
                   testID="room-item-last-message"
                 >
-                  You: 1
+                  Você: 1
                 </Text>
               </View>
             </View>
@@ -64539,7 +64539,7 @@ exports[`Storyshots Room Item Tag 1`] = `
                       ]
                     }
                   >
-                    Auto-join
+                    Entrada Automática
                   </Text>
                 </View>
                 <View
@@ -64941,7 +64941,7 @@ exports[`Storyshots Room Item Tag 1`] = `
                     }
                     testID="auto-join-tag"
                   >
-                    Auto-join
+                    Entrada Automática
                   </Text>
                 </View>
                 <Text
@@ -64977,7 +64977,7 @@ exports[`Storyshots Room Item Tag 1`] = `
                 }
               >
                 <Text
-                  accessibilityLabel="No Message"
+                  accessibilityLabel="Não há mensagens"
                   numberOfLines={2}
                   style={
                     Array [
@@ -65007,7 +65007,7 @@ exports[`Storyshots Room Item Tag 1`] = `
                   }
                   testID="room-item-last-message"
                 >
-                  No Message
+                  Não há mensagens
                 </Text>
               </View>
             </View>
@@ -65384,7 +65384,7 @@ exports[`Storyshots Room Item Tag 1`] = `
                       ]
                     }
                   >
-                    Auto-join
+                    Entrada Automática
                   </Text>
                 </View>
                 <View
@@ -65786,7 +65786,7 @@ exports[`Storyshots Room Item Tag 1`] = `
                     }
                     testID="auto-join-tag"
                   >
-                    Auto-join
+                    Entrada Automática
                   </Text>
                 </View>
                 <Text
@@ -65822,7 +65822,7 @@ exports[`Storyshots Room Item Tag 1`] = `
                 }
               >
                 <Text
-                  accessibilityLabel="No Message"
+                  accessibilityLabel="Não há mensagens"
                   numberOfLines={2}
                   style={
                     Array [
@@ -65852,7 +65852,7 @@ exports[`Storyshots Room Item Tag 1`] = `
                   }
                   testID="room-item-last-message"
                 >
-                  No Message
+                  Não há mensagens
                 </Text>
               </View>
             </View>
@@ -75626,7 +75626,7 @@ Array [
               user 1
                
             </Text>
-            is typing
+            está digitando
             ...
           </Text>
         </View>
@@ -75786,10 +75786,10 @@ Array [
                 }
               }
             >
-              user 1 and user 2
+              user 1 e user 2
                
             </Text>
-            are typing
+            estão digitando
             ...
           </Text>
         </View>
@@ -75952,7 +75952,7 @@ Array [
               user 1, user 2, user 3, user 4, user 5
                
             </Text>
-            are typing
+            estão digitando
             ...
           </Text>
         </View>
@@ -77445,7 +77445,7 @@ exports[`Storyshots Thread Messages.Item badge 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -77811,7 +77811,7 @@ exports[`Storyshots Thread Messages.Item badge 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -78177,7 +78177,7 @@ exports[`Storyshots Thread Messages.Item badge 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -78530,7 +78530,7 @@ exports[`Storyshots Thread Messages.Item badge 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -78916,7 +78916,7 @@ exports[`Storyshots Thread Messages.Item content 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -79266,7 +79266,7 @@ exports[`Storyshots Thread Messages.Item content 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -79616,7 +79616,7 @@ exports[`Storyshots Thread Messages.Item content 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -79966,7 +79966,7 @@ exports[`Storyshots Thread Messages.Item content 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -80316,7 +80316,7 @@ exports[`Storyshots Thread Messages.Item content 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -80686,7 +80686,7 @@ exports[`Storyshots Thread Messages.Item themes 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -81039,7 +81039,7 @@ exports[`Storyshots Thread Messages.Item themes 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View
@@ -81392,7 +81392,7 @@ exports[`Storyshots Thread Messages.Item themes 1`] = `
                 ]
               }
             >
-              November 10, 2020
+              10 de novembro de 2020
             </Text>
           </View>
           <View

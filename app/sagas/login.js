@@ -21,6 +21,8 @@ import UserPreferences from '../lib/userPreferences';
 import { inquiryRequest, inquiryReset } from '../ee/omnichannel/actions/inquiry';
 import { isOmnichannelStatusAvailable } from '../ee/omnichannel/lib';
 
+import appConfig from '../../app.json';
+
 const getServer = state => state.server.server;
 const loginWithPasswordCall = args => RocketChat.loginWithPassword(args);
 const loginCall = (credentials, isFromWebView) => RocketChat.login(credentials, isFromWebView);
